@@ -12,7 +12,10 @@ CSS */
     margin: 0%;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
+::selection {
+    color: rgb(24, 23, 23);
+    background: rgb(255, 251, 13);
+  }
 .home{
     background: url(Images/home.png);
     height: 100vh;
