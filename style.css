@@ -1,9 +1,18 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+@media (min-width: 1281px) {}
+  
+CSS */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 *{
     padding: 0%;
     margin: 0%;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 .home{
     background: url(Images/home.png);
     height: 100vh;
@@ -59,4 +68,119 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 12px;
-   }
+}
+
+   
+
+    
+  
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .home{
+        background: url(Images/Mobile_view/home.png);
+        height: 100vh;
+        
+        background-size: cover;
+        background-position: center;
+    }
+    .home .nav{
+        height: 7vh;
+        width: 100%;
+        background: rgb(243 243 243 / 80%);
+        backdrop-filter: saturate(180%) blur(10px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        width: 35%;
+    }
+    .mid-nav{
+       display: none;
+       
+    }
+    .mid-nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    .mid-nav ul li{
+        margin: auto 50px;
+        display: block;
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+    .mid-nav a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .subscribe-nav{
+        width:35%;
+       
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav-sub{
+        background-color: aliceblue;
+        height: auto;
+        padding: 6px 30px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 12px;
+       }
+    
+  }
