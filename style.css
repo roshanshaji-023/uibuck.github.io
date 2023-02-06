@@ -2,16 +2,16 @@
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
-   
-
+/* 
+@media (min-width: 1920px) {
+  
+CSS */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 *{
     padding: 0%;
     margin: 0%;
     font-family: 'Source Sans Pro', sans-serif;
 }
-@media (min-width: 1920px){
-
 body::-webkit-scrollbar {
     width: 0px;
 }
@@ -128,7 +128,7 @@ body::-webkit-scrollbar {
     font-size: 50px;
 }
     
-}  
+  
   
   /* 
     ##Device = Laptops, Desktops
@@ -138,6 +138,13 @@ body::-webkit-scrollbar {
   @media (min-width: 1025px) and (max-width: 1280px) {
     
     /* CSS */
+    .home_left h1{
+        margin: 18vh auto 0px auto;
+        font-size:80px;
+        font-weight:bolder;
+        line-height: 105px;
+        
+    }
     
   }
   
