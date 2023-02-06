@@ -142,8 +142,11 @@ body::-webkit-scrollbar {
         margin: 18vh auto 0px auto;
         font-size:80px;
         font-weight:bolder;
-        line-height: 105px;
+        line-height: 80px;
         
+    }
+    .home_left p{
+        font-size: 20px;
     }
     
   }
