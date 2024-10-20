@@ -28,7 +28,8 @@ body::-webkit-scrollbar {
   }
 .home{
     background: white;
-    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
     background-size: cover;
     background-position: center;
     
@@ -97,7 +98,8 @@ body::-webkit-scrollbar {
 }
 .home_left h1{
     margin: 18vh auto 0px auto;
-    font-size: 100px;
+    font-size: xx-large;
+    font-size-adjust:inherit;
     font-weight:bolder;
     line-height: 105px;
     
@@ -113,19 +115,28 @@ body::-webkit-scrollbar {
     height: 80vh;
     margin: auto auto;
 }
-.workflow{
+.services{
     height: auto;
     min-height: 60vh;
     background: white;
-    display: flex;
+    
 }
-.workhead{
+.services_head{
     text-align: center;
     width: 100%;
+    min-height: 40px;
+    height: auto;
 }
-.workhead h2{
+.services_head h2{
     margin-top: 5vh;
     font-size: 50px;
+}
+.services_body{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10%
 }
     
   
@@ -280,14 +291,14 @@ body::-webkit-scrollbar {
         height: 50vh;
         margin: auto auto;
     }
-    .workhead{
+    .services_head{}
        
-    }
-    .workhead h2{
+
+    .services_head h2{
         margin-top: 5vh;
         font-size: 30px;
     }
-    .workhead p{
+    .services_head p{
         font-size: 12px;
     }
        
