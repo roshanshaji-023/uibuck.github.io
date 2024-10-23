@@ -3,7 +3,7 @@
   ##Screen = 1281px to higher resolution desktops
 */
 /* 
-@media (min-width: 1920px) {
+@media (min-width: 1920px) {}
   
 CSS */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
@@ -25,7 +25,7 @@ body::-webkit-scrollbar {
 ::selection {
     color: rgb(24, 23, 23);
     background: rgb(255, 251, 13);
-  }
+}
 .home{
     background: white;
     min-height: 100vh;
@@ -117,7 +117,7 @@ body::-webkit-scrollbar {
 }
 .services{
     height: auto;
-    min-height: 60vh;
+    min-height: 100vh;
     background: white;
     
 }
@@ -127,7 +127,7 @@ body::-webkit-scrollbar {
     min-height: 40px;
     height: auto;
 }
-.services_head h2{
+.section_titles{
     margin-top: 5vh;
     font-size: 50px;
 }
@@ -138,15 +138,60 @@ body::-webkit-scrollbar {
     justify-content: space-around;
     margin-top: 10%
 }
+.service_circle{
+    text-align: center;
+    height: 250px;
+    display: flex;
+    width: 250px;
+    border-radius: 50%;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
     
+.service_circle h3{
+    text-align: center;
+}
+.about{
+    text-align: center;
+    height: 100vh;
+}
+.about_body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:100px auto auto auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+}
+.about_body>div{
+    width: 50%;
+    text-align: left;
+    margin: auto;
+}
+#aboutimg{
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+}
+.about_body_left{
+    display: flex;
+}
+.about_body_right p{
+    text-align: justify;
+}
   
-  
-  /* 
+/* 
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
-  */
+*/
   
-  @media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
     
     /* CSS */
     .home_left h1{
@@ -160,47 +205,47 @@ body::-webkit-scrollbar {
         font-size: 20px;
     }
     
-  }
+}
   
-  /* 
+/* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
-  */
+*/
   
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     
     /* CSS */
     
-  }
+}
   
-  /* 
+/* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
-  */
+*/
   
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     
     /* CSS */
     
-  }
+}
   
-  /* 
+/* 
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 481px to 767px
-  */
+*/
   
-  @media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
     
     /* CSS */
     
-  }
+}
   
-  /* 
+/* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
-  */
+*/
   
-  @media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
     
     .home{
         background: white;
@@ -294,13 +339,54 @@ body::-webkit-scrollbar {
     .services_head{}
        
 
-    .services_head h2{
+    .section_titles{
         margin-top: 5vh;
         font-size: 30px;
     }
     .services_head p{
         font-size: 12px;
     }
+    .services_body{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 10%
+    }
+    .service_circle{
+        text-align: center;
+        height: 250px;
+        display: flex;
+        width: 250px;
+        margin: 10px;
+        border-radius: 50%;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    }
+    .about{
+        text-align: center;
+        height: 100vh;
+    }
+    .about_body{
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+        width: 100%;
+        margin:50px auto auto auto;
+        align-items: center;
+        justify-content: center;
+        align-content: center;    
+    }
+    .about_body>div{
+        width: 80%;
+        text-align: justify;
+        margin: auto;
+    }
+    
        
     
-  }
+}
