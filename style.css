@@ -150,8 +150,8 @@ body::-webkit-scrollbar {
     display: flex;
     width: 250px;
     border-radius: 15px;
-    align-content: center;
-    flex-wrap: nowrap;
+    align-content: space-around;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -165,6 +165,7 @@ body::-webkit-scrollbar {
     background: url(./Resources/fluidbg.jpg);
     background-position: center;
     background-size: cover;
+    
 }
 #box2{
     background: url(./Resources/redbg.jpg);
