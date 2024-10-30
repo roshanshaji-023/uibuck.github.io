@@ -371,6 +371,9 @@ body::-webkit-scrollbar {
         text-align: center;
         height: 100vh;
     }
+    .about_head p{
+        font-size: 12px;
+    }
     .about_body{
         display: flex;
         flex-wrap:wrap;
@@ -385,6 +388,9 @@ body::-webkit-scrollbar {
         width: 80%;
         text-align: justify;
         margin: auto;
+    }
+    .about_body_right p{
+        font-size: 18px;
     }
     
        
