@@ -177,6 +177,10 @@ body::-webkit-scrollbar {
     background-position: center;
     background-size: cover;
 }
+.box_content{
+    width: 90%;
+    margin: auto;
+}
 .about{
     text-align: center;
     height: 100vh;
