@@ -217,7 +217,7 @@ body::-webkit-scrollbar {
     text-align: justify;
 }
 .connect{
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     background: url(./Resources/6233478.jpg);
     background-position: center;
