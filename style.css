@@ -86,6 +86,10 @@ body::-webkit-scrollbar {
     justify-content: space-around;
     border-radius: 12px;
 }
+.nav-sub a{
+    color:#fff;
+    text-decoration: none;
+}
 .home_text{
     display: flex;
     margin: 8vh auto;
@@ -226,16 +230,20 @@ body::-webkit-scrollbar {
     margin: auto;
     border-radius: 25px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: center;
     color:#ffff;
-    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
-    
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);   
 }
-#connectimg{
-    width: 30px;
-    height: auto;
+#connect_link{
+    padding:5px 20px;
+    background-color: #ebedee;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
 }
 
 
