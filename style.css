@@ -215,6 +215,7 @@ body::-webkit-scrollbar {
 }
 .about_body_right p{
     text-align: justify;
+    font-size: larger;
 }
 .connect{
     min-height: 80vh;
