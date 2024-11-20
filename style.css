@@ -311,8 +311,21 @@ footer {
     color: #777;
     font-size: 14px;
   }
-  
-
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+ 
+@media (min-width: 1920px) {
+    .home_left h1{
+        margin: 18vh auto 0px auto;
+        font-size: 100px;
+        font-size-adjust:inherit;
+        font-weight:bolder;
+        line-height: 105px;
+        
+    }
+}
 
 
 /* 
