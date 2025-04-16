@@ -1,0 +1,91 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9fafb; /* Light background for clean look */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #10b981; /* Uibuck’s green color */
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 20px;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for navbar */
+}
+
+.navbar-toggler-icon {
+    background-color: #10b981; /* Uibuck’s green for the toggle */
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #10b981;
+    background-color: rgba(16, 185, 129, 0.1);
+}
+
+/* Full-page form styling */
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1f2937;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+input, select {
+    border-radius: 10px;
+}
+
+.form-control, .form-select {
+    font-size: 1.1rem;
+    padding: 1.2rem;
+}
+
+button {
+    background-color: #10b981;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #065f46;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
