@@ -6,12 +6,15 @@
 @media (min-width: 1920px) {}
   
 CSS */
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 *{  scroll-behavior: smooth;
     padding: 0%;
     margin: 0%;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
+/* Apply Source Sans Pro to entire website */
+
 body::-webkit-scrollbar {
     width: 0px;
 }
@@ -48,48 +51,60 @@ body::-webkit-scrollbar {
 .logo{
     width: 15%;
 }
-.mid-nav{
-    width: 40%;
-   
-}
-.mid-nav ul{
-    display: flex;
-    justify-content: center;
-}
-.mid-nav ul li{
-    margin: auto 50px;
-    display: block;
-    text-align: center;
-    flex-wrap: nowrap;
-}
-.mid-nav a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-}
-.subscribe-nav{
-    width:15%;
-   
-    display: flex;
-    justify-content: flex-end;
-}
-.nav-sub{
-    background-color: rgba(8, 8, 8, 0.979);
-    color: #ffffff;
-    height: auto;
-    width: 120px;
-    height: 30px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 12px;
-}
-.nav-sub a{
-    color:#fff;
-    text-decoration: none;
-}
+/* Navbar Styling */
+.navbar {
+    background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Glassy effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #000; /* Set text color to black */
+    transition: color 0.2s ease;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #169d53 !important; /* Accent color on hover */
+  }
+  .glassy-navbar {
+    background: rgba(255, 255, 255, 0.8); /* translucent white */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1050;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #000 !important;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: #FF6B6B !important;
+  }
+  /* Logo styling */
+  .navbar-brand img {
+    max-height: 40px;
+    width: auto;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #169d53; /* Toggle button color */
+  }
+  
+  @media (max-width: 991px) {
+    *{  scroll-behavior: smooth;
+        padding: 0%;
+        margin: 0%;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .navbar-collapse {
+      background-color: rgba(255, 255, 255, 0.9); /* Light background for dropdown */
+    }
+  }
+  
 .home_text{
     display: flex;
     margin: 8vh auto;
@@ -122,10 +137,11 @@ body::-webkit-scrollbar {
 .services{
     width: 100%;
     height: auto;
-    min-height: 100vh;
+    min-height: 80vh;
     background: rgb(0, 0, 0);
     
 }
+
 .services_head{
     text-align: center;
     width: 100%;
@@ -152,7 +168,7 @@ body::-webkit-scrollbar {
     text-align: center;
     height: 350px;
     display: flex;
-    width: 250px;
+    width: 400px;
     border-radius: 15px;
     align-content: space-around;
     flex-wrap: wrap;
