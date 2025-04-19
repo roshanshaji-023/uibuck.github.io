@@ -27,4 +27,5 @@ document.getElementById("internship-form").addEventListener("submit", async func
       alert("There was an issue with your submission. Please try again.");
     }
   });
-  
+
+ 
