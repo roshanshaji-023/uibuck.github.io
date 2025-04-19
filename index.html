@@ -14,66 +14,77 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./Resources/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./Resources/favicon_io/site.webmanifest">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        /* Fade-in effect */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
     <section class="home">
         <!-- Bootstrap Navbar with Custom Toggle Icon -->
-<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-transparent sticky-top shadow-sm">
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand d-flex align-items-center" href="/">
-        <img src="./Resources/favicon_io/favicon-32x32.png" alt="UIBuck Logo" class="img-fluid me-2">
-        <span class="fw-bold text-uppercase text-dark">UIBuck</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#uibuckNavbar">
-        <!-- Custom Toggle Icon (FontAwesome) -->
-        <i class="fas fa-bars text-dark" style="font-size: 24px;"></i>
-      </button>
-      
-      <div class="collapse navbar-collapse justify-content-end" id="uibuckNavbar">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-dark" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Workshops</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="internship.html">Internships</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">AI Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="/about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-transparent sticky-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <img src="./Resources/favicon_io/favicon-32x32.png" alt="UIBuck Logo" class="img-fluid me-2">
+                    <span class="fw-bold text-uppercase text-dark">UIBuck</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#uibuckNavbar">
+                    <i class="fas fa-bars text-dark" style="font-size: 24px;"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="uibuckNavbar">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/workshop.html">Workshops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="internship.html">Internships</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">AI Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <section class="home_text">
             <div class="home_left">
                 <h1>Dive into <span style="color:#169d53;">Design</span> Development & learning</h1>
                 <br>
-                <p>Start your journey of learning , experiments & innovations<br> in the tech era, here with us :)</p>
+                <p>Start your journey of learning, experiments & innovations<br> in the tech era, here with us :)</p>
             </div>
             <div class="home_right">
-                <video autoplay loop muted playsinline >
+                <video autoplay loop muted playsinline>
                     <source src="./Resources/home.mp4">
                 </video>
             </div>
         </section>
     </section>
-    <section class="services">
+
+    <section class="services fade-in">
         <div class="services_head">
             <br><br>
             <h2 class="section_titles">What <span style="color:#169d53;">We</span> Offer</h2><br>
-            <p>As an tech-made team let's quote in abstract how we  <br> implement your curriculum.</p>
+            <p>As a tech-made team, let's quote in abstract how we <br> implement your curriculum.</p>
         </div>
         <div class="services_body">
             <div class="service_box" id="box1">
@@ -106,7 +117,8 @@
         </div>
         <br>
     </section>
-    <section class="about">
+
+    <section class="about fade-in">
         <div class="about_head">
             <br>
             <h2 class="section_titles">About <span style="color:#169d53;">Us</span></h2><br>
@@ -117,69 +129,76 @@
                 <img src="./Resources/coworking.png" alt="" srcset="" id="aboutimg">
             </div>
             <div class="about_body_right">
-                <p>We are a passionate team of tech enthusiasts dedicated to shaping the future of technology. Our startup specializes in delivering hands-on workshops, immersive internships, and cutting-edge AI solutions designed to empower students and professionals alike. With expertise in web development, python, machine learning, and modern web technologies, we aim to bridge the gap between theoretical knowledge and real-world application. Our mission is to equip individuals with the skills needed to excel in today’s fast-evolving tech landscape. We collaborate closely with educational institutions and businesses to deliver customized learning experiences. Innovation, creativity, and a commitment to excellence drive everything we do and we belive sky is the limit!</p>
-
+                <p>We are a passionate team of tech enthusiasts dedicated to shaping the future of technology. Our startup specializes in delivering hands-on workshops, immersive internships, and cutting-edge AI solutions designed to empower students and professionals alike. With expertise in web development, Python, machine learning, and modern web technologies, we aim to bridge the gap between theoretical knowledge and real-world application. Our mission is to equip individuals with the skills needed to excel in today’s fast-evolving tech landscape. We collaborate closely with educational institutions and businesses to deliver customized learning experiences. Innovation, creativity, and a commitment to excellence drive everything we do, and we believe sky is the limit!</p>
             </div>
             <br><br>
         </div>
-
     </section>
+
     <section class="connect">
-        <div class="connect_content">
+        <div class="connect_content fade-in">
             <div>
-                <h3>lets connect to make it happen </h3><br>
+                <h3>Let's connect to make it happen</h3><br>
             </div>
             <div>
-                <a id="connect_link" href="https://wa.me/+91##########?text=I'm%20interested%20in%20your%20workshop" target="_blank">lets chat !</a>
-
+                <a id="connect_link" href="https://wa.me/+91##########?text=I'm%20interested%20in%20your%20workshop" target="_blank">Let's chat !</a>
             </div>
         </div>
     </section>
-    <!-- Footer Section -->
-<footer>
-    <div class="footer-container">
-      <!-- Company Overview -->
-      <div class="footer-section company-overview">
-        <h2>UIBuck</h2>
-        <p>Empowering students through workshops, internships, and innovative AI products. Creating real-world solutions and building skills in web development, Python, machine learning, and web technologies.</p>
-      </div>
-  
-      <!-- Quick Links -->
-      <div class="footer-section quick-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="/about.html">About Us</a></li>
-          <li><a href="#workshops">Workshops</a></li>
-          <li><a href="/internship.html">Internships</a></li>
-          <li><a href="#ai-products">AI Products</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-          <li><a href="#privacy">Privacy Policy</a></li>
-        </ul>
-      </div>
-  
-      <!-- Contact Information -->
-      <div class="footer-section contact-info">
-        <h3>Contact Us</h3>
-        <p><strong>Email:</strong> <a href="mailto:theuibuck@gmail.com">theuibuck@gmail.com</a></p>
-        <!--<p><strong>Phone:</strong> </p>-->
-      </div>
-  
-      <!-- Social Links -->
-      <div class="footer-section social-links">
-        <h3>Follow Us</h3>
-        <!--
-        <a href="#" class="social-icon">Facebook</a>
-        <a href="#" class="social-icon">Twitter</a>
-        <a href="#" class="social-icon">LinkedIn</a>-->
-        <a href="https://www.instagram.com/uibuck" class="social-icon">Instagram</a>
-      </div>
-    </div>
-  
-    <!-- Bottom Text -->
-    <div class="footer-bottom">
-      <p>© 2025 Uibuck. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
 
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section company-overview">
+                <h2>UIBuck</h2>
+                <p>Empowering students through workshops, internships, and innovative AI products. Creating real-world solutions and building skills in web development, Python, machine learning, and web technologies.</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/workshop.html">Workshops</a></li>
+                    <li><a href="/internship.html">Internships</a></li>
+                    <li><a href="#ai-products">AI Products</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h3>Contact Us</h3>
+                <p><strong>Email:</strong> <a href="mailto:theuibuck@gmail.com">theuibuck@gmail.com</a></p>
+            </div>
+            <div class="footer-section social-links">
+                <h3>Follow Us</h3>
+                <a href="https://www.instagram.com/uibuck" class="social-icon">Instagram</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Uibuck. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for scroll animation
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.5 // trigger when 50% of the element is in view
+            });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
 </html>

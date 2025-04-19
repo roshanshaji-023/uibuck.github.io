@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Join industry-ready workshops by Uibuck on web development, Python, machine learning, AI, and more. Get hands-on experience and certifications." />
+  <meta name="keywords" content="Uibuck, Workshops, Web Development, Python, Machine Learning, AI, Internship, Kerala Workshops" />
+  <title>Workshops | Uibuck</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      padding: 1rem;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #0d6efd, #6610f2);
+      color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-top: 20px;
+    }
+
+
+.hero-video {
+  position: absolute;
+  top: 0;
+    min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.5); /* You can adjust this for readability */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .workshop-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .workshop-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-icon {
+      font-size: 2rem;
+      color: #0d6efd;
+      margin-bottom: 10px;
+    }
+
+    .benefits-list li {
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      background: #0d6efd;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2.5rem;
+    }
+
+    .cta a.btn {
+      margin-top: 20px;
+    }
+
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+
+    .scroll-reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer {
+      background-color: #212529;
+      color: #ccc;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">UIBuck</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/workshop.html">Workshops</a></li>
+          <li class="nav-item"><a class="nav-link" href="/internship.html">Internships</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">AI Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero position-relative overflow-hidden d-flex align-items-center justify-content-center">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="./Resources/1103472_1080p_4k_3840x2160.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    <div class="hero-content text-center text-white px-3">
+    <h1 class="scroll-reveal display-4 fw-bold">UIBuck Workshops</h1>
+    <p class="scroll-reveal">Empowering students with real-world skills in tech. Learn, build, and innovate through our curated hands-on workshops across India.</p>
+    </div>
+</section>
+
+<!-- Workshops Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title scroll-reveal">Popular Workshops</h2>
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4 scroll-reveal">
+        <div class="card workshop-card h-100">
+          <div class="card-body text-center">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <h5 class="card-title">Frontend Web Development</h5>
+            <p class="card-text">HTML, CSS, JavaScript & React – build responsive, dynamic web apps from scratch.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4 scroll-reveal">
+        <div class="card workshop-card h-100">
+          <div class="card-body text-center">
+            <div class="card-icon"><i class="fas fa-brain"></i></div>
+            <h5 class="card-title">Machine Learning Essentials</h5>
+            <p class="card-text">Intro to AI using Python, Scikit-Learn, hands-on projects, and data visualizations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-4 scroll-reveal">
+        <div class="card workshop-card h-100">
+          <div class="card-body text-center">
+            <div class="card-icon"><i class="fas fa-database"></i></div>
+            <h5 class="card-title">Python + SQL Bootcamp</h5>
+            <p class="card-text">Master backend development with Python and relational databases like MySQL/PostgreSQL.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="py-5 bg-light">
+  <div class="container scroll-reveal">
+    <h2 class="section-title">Why Join Our Workshops?</h2>
+    <ul class="list-unstyled benefits-list">
+      <li><i class="fas fa-check-circle text-success me-2"></i> Industry-curated curriculum</li>
+      <li><i class="fas fa-check-circle text-success me-2"></i> Hands-on learning with real-time projects</li>
+      <li><i class="fas fa-check-circle text-success me-2"></i> Expert mentors and personalized guidance</li>
+      <li><i class="fas fa-check-circle text-success me-2"></i> Certification of completion</li>
+      <li><i class="fas fa-check-circle text-success me-2"></i> Internship and placement support</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta scroll-reveal">
+  <div class="container">
+    <h2>Ready to Transform Your Skills?</h2>
+    <p>Join hundreds of students who leveled up with Uibuck. Limited seats available for upcoming workshops.</p>
+    <a href="#" class="btn btn-light btn-lg mt-3">Register Now</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p class="mb-1">&copy; 2025 Uibuck. All rights reserved.</p>
+    <p class="mb-0">
+      <a href="/">Home</a> · 
+      <a href="/privacy.html">Privacy</a> · 
+      <a href="/contact.html">Contact</a>
+    </p>
+  </div>
+</footer>
+
+<!-- JS: Bootstrap & Scroll Reveal -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    document.querySelectorAll(".scroll-reveal").forEach((el) => {
+      observer.observe(el);
+    });
+  });
+</script>
+</body>
+</html>
